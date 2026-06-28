@@ -1,8 +1,8 @@
 'use client'
 
 import { feeData } from "./jee-advanced/data";
-import Link from 'next/link'
 
+import Link from 'next/link'
 import Image from 'next/image'
 
 export default function FeeStructurePage() {
