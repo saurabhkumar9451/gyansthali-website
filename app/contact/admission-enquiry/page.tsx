@@ -23,9 +23,9 @@ export default function AdmissionEnquiryPage() {
                             <strong>Office Contact Hours :</strong> 8:00 AM - 8:00 PM
                         </p>
 
-                        <p className="text-2xl mt-5">
+                        {/* <p className="text-2xl mt-5">
                             <strong>Contact No :</strong> 0744 2777700
-                        </p>
+                        </p> */}
                     </div>
 
                     <div>
@@ -34,11 +34,11 @@ export default function AdmissionEnquiryPage() {
                         </h2>
 
                         <p className="text-2xl">
-                            <strong>Email :</strong> admissions@gyansthali.com
+                            <strong>Email :</strong> Infogyansthalividyapeeth@gmail.com
                         </p>
 
                         <p className="text-2xl mt-5">
-                            <strong>Contact No :</strong> +91 9876543210
+                            <strong>Contact No :</strong> +91 8881166262
                         </p>
                     </div>
 

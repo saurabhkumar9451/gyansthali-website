@@ -51,11 +51,15 @@ bg-gradient-to-b
 from-slate-50
 via-white
 to-blue-50
+dark:from-slate-900
+dark:via-slate-950
+dark:to-slate-900
+text-foreground
 "
     >
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <SectionHeading
-          eyebrow="Why Apex"
+          eyebrow="Why GYANSTHALIVIDHYAPEETH"
           title="An ecosystem designed for rankers"
           description="Everything a serious aspirant needs — under one roof and one login."
         />
@@ -69,8 +73,8 @@ to-blue-50
   overflow-hidden
   rounded-3xl
   border
-  border-slate-200
-  bg-white
+  border-slate-200 dark:border-slate-700
+bg-white dark:bg-slate-800
   p-8
   shadow-sm
   transition-all
@@ -97,7 +101,7 @@ to-blue-50
   " />
 
               {/* Icon */}
-              <div
+              {/* <div
                 className="
     flex h-16 w-16 items-center justify-center
     rounded-2xl
@@ -114,7 +118,23 @@ to-blue-50
     "
               >
                 <f.icon className="h-7 w-7" />
-              </div>
+              </div> */}
+              <div
+  className="
+    flex h-16 w-16 items-center justify-center
+    rounded-2xl
+    bg-slate-100 dark:bg-slate-200
+    text-blue-600 dark:text-blue-700
+    transition-all
+    duration-500
+    group-hover:scale-110
+    group-hover:rotate-12
+    group-hover:bg-blue-600
+    group-hover:text-white
+  "
+>
+  <f.icon className="h-7 w-7" />
+</div>
 
               {/* Title */}
               <h3
@@ -122,7 +142,7 @@ to-blue-50
     mt-6
     text-2xl
     font-bold
-    text-slate-900
+    text-slate-900 dark:text-white
     transition-colors
     duration-500
     group-hover:text-blue-600
@@ -137,8 +157,7 @@ to-blue-50
     mt-4
     text-base
     leading-8
-    text-slate-500
-    "
+text-slate-500 dark:text-slate-300    "
               >
                 {f.desc}
               </p>

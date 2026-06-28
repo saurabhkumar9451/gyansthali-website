@@ -2,36 +2,33 @@
 
 export default function PayFeeOnlinePage() {
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
-
+<div className="min-h-screen bg-gray-100 dark:bg-slate-900 py-8">
       {/* Heading */}
       <div className="max-w-5xl mx-auto">
-        <div className="bg-lime-100 text-center py-2">
-          <h1 className="text-5xl font-bold">
-            Online Fee - Login
-          </h1>
-        </div>
+     <div className="bg-lime-100 dark:bg-slate-700 text-center py-2">
+  <h1 className="text-5xl font-bold text-black dark:text-white">
+    Online Fee - Login
+  </h1>
+</div>
       </div>
 
       {/* Login Form */}
-      <div className="max-w-xl mx-auto mt-8 bg-white border border-lime-200 rounded shadow">
-
-        <div className="bg-lime-100 px-4 py-3 text-lg">
-          Login
+<div className="max-w-xl mx-auto mt-8 bg-white dark:bg-slate-800 border border-lime-200 dark:border-slate-700 rounded shadow">
+<div className="bg-lime-100 dark:bg-slate-700 px-4 py-3 text-lg text-black dark:text-white">
+            Login
         </div>
 
         <div className="p-8">
 
           {/* Roll Number */}
           <div className="mb-6">
-            <label className="font-semibold">
-              Roll Number <span className="text-red-500">*</span>
+<label className="font-semibold text-black dark:text-white">
+                Roll Number <span className="text-red-500">*</span>
             </label>
 
             <input
               type="text"
-              className="w-full border rounded px-3 py-2 mt-2"
-            />
+             className="w-full border rounded px-3 py-2 mt-2 bg-white dark:bg-slate-700 text-black dark:text-white border-gray-300 dark:border-slate-600"            />
           </div>
 
           {/* DOB */}
@@ -61,7 +58,8 @@ export default function PayFeeOnlinePage() {
               Session <span className="text-red-500">*</span>
             </label>
 
-            <select className="w-full border rounded px-3 py-2 mt-2">
+            <select
+             className="w-full border rounded px-3 py-2 mt-2 bg-white dark:bg-slate-700 text-black dark:text-white border-gray-300 dark:border-slate-600">
               <option>2026-27</option>
             </select>
           </div>
@@ -77,8 +75,7 @@ export default function PayFeeOnlinePage() {
       </div>
 
       {/* Payment Methods */}
-      <div className="max-w-4xl mx-auto mt-10 overflow-hidden rounded-xl shadow-2xl bg-white">
-  <div className="grid md:grid-cols-2">
+<div className="max-w-4xl mx-auto mt-10 overflow-hidden rounded-xl shadow-2xl bg-white dark:bg-slate-800">  <div className="grid md:grid-cols-2">
 
     {/* Left Side */}
     <div className="bg-gradient-to-b from-fuchsia-500 to-purple-500 p-14 flex flex-col justify-center">
@@ -100,8 +97,8 @@ export default function PayFeeOnlinePage() {
         We accept
       </h2>
 
-      <ul className="space-y-8 text-2xl text-gray-800">
-        <li className="hover:text-purple-600 transition-all duration-300">
+<ul className="space-y-8 text-2xl text-gray-800 dark:text-gray-200">
+          <li className="hover:text-purple-600 transition-all duration-300">
           • NetBanking
         </li>
 

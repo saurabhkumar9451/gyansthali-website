@@ -12,17 +12,17 @@ const contactItems = [
   {
     icon: MapPin,
     title: 'Visit us',
-    lines: ['12 Knowledge Park, Sector 62', 'New Delhi, 110092'],
+    lines: ['Akbarpur Ambedkar Nagar pincode 224168'],
   },
   {
     icon: Phone,
     title: 'Call us',
-    lines: ['+91 11 4000 1234', '+91 98765 43210'],
+    lines: ['+91 8881166262'],
   },
   {
     icon: Mail,
     title: 'Email us',
-    lines: ['hello@apexacademy.in', 'admissions@apexacademy.in'],
+    lines: ['Infogyansthalividyapeeth@gmail.com'],
   },
   {
     icon: Clock,
@@ -40,17 +40,56 @@ export default function ContactPage() {
         description="Have a question or ready to enroll? Reach out — our counsellors are here to help."
       />
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      {/* <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24"> */}
+      <section
+  className="
+  mx-auto
+  max-w-7xl
+  px-4
+  py-16
+  bg-gradient-to-br
+  from-slate-50
+  via-blue-50
+  to-indigo-100
+"
+>
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col gap-8">
             <div className="grid gap-4 sm:grid-cols-2">
               {contactItems.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-border bg-card p-5"
-                >
-                  <span className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                    <item.icon className="size-5" />
+                  className="
+group
+rounded-3xl
+border
+border-border
+bg-card
+p-6
+shadow-md
+transition-all
+duration-500
+hover:-translate-y-3
+hover:shadow-2xl
+hover:border-blue-500
+">
+                  <span
+                    className="
+  flex
+  size-14
+  items-center
+  justify-center
+  rounded-2xl
+  bg-primary/10
+  text-primary
+  transition-all
+  duration-500
+  group-hover:scale-110
+  group-hover:rotate-12
+  group-hover:bg-blue-600
+  group-hover:text-white
+"
+                  >                    <item.icon className="size-5" />
                   </span>
                   <h3 className="mt-3 font-heading font-semibold">
                     {item.title}

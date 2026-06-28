@@ -41,15 +41,15 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${poppins.variable} bg-background`}
     >
-      <body className="font-sans antialiased">
-        <ThemeProvider
+<body className="font-sans antialiased bg-background text-foreground">
+          <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
-             <LayoutWrapper>
+<div className="flex min-h-screen flex-col bg-background text-foreground">
+               <LayoutWrapper>
   {children}
 </LayoutWrapper>
 

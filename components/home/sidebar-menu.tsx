@@ -65,7 +65,7 @@ export default function SidebarMenu({
     w-[28vw]
     min-w-[320px]
     max-w-[450px]
-    bg-[#efefef]
+bg-white dark:bg-slate-900
     shadow-2xl
     z-50
     transition-transform
@@ -84,8 +84,10 @@ export default function SidebarMenu({
 
       {/* Menu */}
       {navItems.map((item, index) => (
-        <div key={item.label} className="border-b">
-
+        <div
+          key={item.label}
+          className="border-b border-gray-200 dark:border-slate-700"
+        >
           <button
             className="
 w-full
@@ -125,38 +127,6 @@ dark:text-white
             />
           </button>
 
-          {/* {activeMenu === index && (
-            <div className="bg-gray-50 dark:bg-slate-900">
-
-{item.children.map((child) => (
-  <Link
-    key={child.href}
-    href={child.href}
-    className="
-      flex items-center gap-3
-      px-16
-      py-5
-      text-xl
-      text-gray-700
-      dark:text-gray-200
-      hover:bg-gray-100
-      dark:hover:bg-slate-800
-      transition-all duration-300
-    "
-    onClick={() => setOpen(false)}
-  >
-    <span className="text-gray-600 dark:text-gray-300 font-bold">
-      &gt;
-    </span>
-
-    {child.label}
-  </Link>
-))}
-
-            </div>
-          )} */}
-
-
           <div
             className={`
     grid
@@ -171,28 +141,51 @@ dark:text-white
           >
             <div className="overflow-hidden bg-gray-50 dark:bg-slate-900">
               {item.children.map((child) => (
-                <Link
-                  key={child.href}
-                  href={child.href}
-                  className="
-          flex items-center gap-3
-          px-16
-          py-5
-          text-xl
-          text-gray-700
-          dark:text-gray-200
-          hover:bg-gray-100
-          dark:hover:bg-slate-800
-          transition-all duration-300
-        "
-                  onClick={() => setOpen(false)}
-                >
-                  <span className="text-gray-600 dark:text-gray-300 font-bold">
-                    &gt;
-                  </span>
+//                 <Link
+//                   key={child.href}
+//                   href={child.href}
+//                   className="
+// flex
+// items-center
+// gap-3
+// px-8
+// py-5
+// text-xl
+// text-gray-900
+// dark:text-white
+// hover:bg-gray-100
+// dark:hover:bg-slate-800
+// transition-all duration-300
+// "
+//                   onClick={() => setOpen(false)}
+//                 >
+//                   <span className="text-gray-600 dark:text-gray-300 font-bold">
+//                     &gt;
+//                   </span>
 
-                  {child.label}
-                </Link>
+//                   {child.label}
+//                 </Link>
+<Link
+  key={child.href}
+  href={child.href}
+  className="
+    flex
+    items-center
+    gap-3
+    px-8
+    py-5
+    text-xl
+    text-gray-900
+    dark:text-white
+    hover:bg-gray-100
+    dark:hover:bg-slate-800
+    transition-all duration-300
+  "
+  onClick={() => setOpen(false)}
+>
+  <span className="text-blue-500 font-bold">›</span>
+  <span>{child.label}</span>
+</Link>
               ))}
             </div>
           </div>

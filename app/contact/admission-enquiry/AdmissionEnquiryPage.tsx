@@ -22,37 +22,6 @@ export default function AdmissionEnquiryPage() {
   className="space-y-20 text-center"
 ></motion.div>
 
-          {/* <div>
-            <h2 className="text-4xl font-bold mb-8">
-              Call Center, Help Desk
-            </h2>
-
-            <p className="text-2xl">
-              <strong>Office Contact Hours :</strong> 8:00 AM - 8:00 PM
-            </p>
-
-            <p className="text-2xl mt-5">
-              <strong>Contact No :</strong> 0744 2777700
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-4xl font-bold mb-8">
-              Counselling, Help Desk
-            </h2>
-
-            <p className="text-2xl">
-              <strong>Email :</strong> admissions@gyansthali.com
-            </p>
-
-            <p className="text-2xl mt-5">
-              <strong>Contact No :</strong> +91 9876543210
-            </p>
-          </div>
-
-        </div> */}
-
-
         <div className="grid md:grid-cols-2 gap-6">
 
   <div
@@ -91,9 +60,9 @@ export default function AdmissionEnquiryPage() {
     </h3>
 
     <p className="mt-4 text-lg text-slate-600 leading-8">
-      12 Knowledge Park,
-      Sector 62 <br />
-      New Delhi, 110092
+      Akbarpur Ambedkar Nagar 
+      <br />
+       224168
     </p>
   </div>
 

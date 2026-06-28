@@ -82,18 +82,17 @@ export function SiteHeader({
         <div className="bg-lime-500 text-white text-sm">
 
         <div className="bg-lime-500 text-black text-lg font-bold">
-          <div className="mx-auto max-w-screen-2xl flex items-center justify-between px-2 py-2">
-
+<div className="mx-auto max-w-screen-2xl flex items-center justify-between px-6 py-2">
             <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-4">
                 <Phone className="animate-bounce" size={18} />
-                <span>+91-744-2777777</span>
+                <span>+91-8881166262</span>
               </div>
 
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <MessageCircle className="animate-bounce" size={18} />
                 <span>73400 10345</span>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex items-center gap-4">
