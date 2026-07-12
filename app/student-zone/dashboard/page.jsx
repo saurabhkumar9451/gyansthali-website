@@ -129,7 +129,8 @@ export default function StudentDashboard() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
 
           <Link
-            href="/student/admission-form"
+            // href="/student/admission-form"
+            href="/apply-online"
             className="bg-white rounded-2xl p-6 shadow hover:shadow-xl"
           >
             <FileText
@@ -165,7 +166,8 @@ export default function StudentDashboard() {
           </Link> */}
 
           <Link
-            href="/student/payment"
+            //href="/student/payment"
+            href="/pay-fee-online"
             className="bg-white rounded-2xl p-6 shadow hover:shadow-xl"
           >
             <CreditCard
