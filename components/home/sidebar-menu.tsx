@@ -62,9 +62,9 @@ export default function SidebarMenu({
     top-0
     left-0
     h-screen
-    w-[28vw]
-    min-w-[320px]
-    max-w-[450px]
+    sm:w-[70vw]
+md:w-[28vw]
+max-w-[450px]
 bg-white dark:bg-slate-900
     shadow-2xl
     z-50
@@ -140,35 +140,11 @@ dark:text-white
   `}
           >
             <div className="overflow-hidden bg-gray-50 dark:bg-slate-900">
-              {item.children.map((child) => (
-//                 <Link
-//                   key={child.href}
-//                   href={child.href}
-//                   className="
-// flex
-// items-center
-// gap-3
-// px-8
-// py-5
-// text-xl
-// text-gray-900
-// dark:text-white
-// hover:bg-gray-100
-// dark:hover:bg-slate-800
-// transition-all duration-300
-// "
-//                   onClick={() => setOpen(false)}
-//                 >
-//                   <span className="text-gray-600 dark:text-gray-300 font-bold">
-//                     &gt;
-//                   </span>
-
-//                   {child.label}
-//                 </Link>
-<Link
-  key={child.href}
-  href={child.href}
-  className="
+             {item.children.map((child, childIndex) => (
+  <Link
+    key={`${child.href}-${childIndex}`}
+    href={child.href}
+                  className="
     flex
     items-center
     gap-3
@@ -181,16 +157,14 @@ dark:text-white
     dark:hover:bg-slate-800
     transition-all duration-300
   "
-  onClick={() => setOpen(false)}
->
-  <span className="text-blue-500 font-bold">›</span>
-  <span>{child.label}</span>
-</Link>
+                  onClick={() => setOpen(false)}
+                >
+                  <span className="text-blue-500 font-bold">›</span>
+                  <span>{child.label}</span>
+                </Link>
               ))}
             </div>
           </div>
-
-
 
         </div>
       ))}

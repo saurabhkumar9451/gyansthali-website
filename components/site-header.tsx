@@ -78,48 +78,74 @@ export function SiteHeader({
   const [activeMenu, setActiveMenu] = React.useState<number | null>(null)
 
   return (
-<header className="sticky top-0 z-50 bg-[#020B1F] border-t-4 border-lime-500 shadow-xl">
-        <div className="bg-lime-500 text-white text-sm">
+    <header className="sticky top-0 z-50 bg-[#020B1F] border-t-4 border-lime-500 shadow-xl">
+      <div className="bg-lime-500 text-white text-sm">
 
         <div className="bg-lime-500 text-black text-lg font-bold">
-<div className="mx-auto max-w-screen-2xl flex items-center justify-between px-6 py-2">
-            <div className="flex items-center gap-8">
-              <div className="flex items-center gap-4">
+          <div className="mx-auto
+              max-w-screen-2xl flex flex-col sm:flex-row items-center justify-between gap-2 px-3 md:px-6py-2">
+            <div className="flex items-center gap-2 md:gap-4">
+              <a
+                href="tel:+918881166262"
+                className="flex items-center gap-4 hover:text-white transition-colors"
+              >
                 <Phone className="animate-bounce" size={18} />
-                <span>+91-8881166262</span>
-              </div>
+                {/* <span>+91-8881166262</span> */}
+                <span className="text-sm md:text-lg whitespace-nowrap">
+                  +91-8881166262
+                </span>
+              </a>
 
-              {/* <div className="flex items-center gap-2">
-                <MessageCircle className="animate-bounce" size={18} />
-                <span>73400 10345</span>
-              </div> */}
+             
             </div>
-
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 md:gap-4">
+              <Link
+                href="/apply-online"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
                 <Laptop className="animate-bounce" size={18} />
-                <span>Apply Online</span>
-              </div>
+                {/* <span>Apply Online</span> */}
+                <span className="text-xs md:text-lg whitespace-nowrap">
+                  Apply Online
+                </span>
+              </Link>
 
-              <span>||</span>
-
-              <div className="flex items-center gap-2">
+              <span className="text-[10px] sm:text-xs md:text-base mx-1 md:mx-3">
+                ||
+              </span>
+              <Link
+                href="/pay-fee-online"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
                 <IndianRupee className="animate-bounce" size={18} />
-                <span>Pay Fee Online</span>
-              </div>
+                {/* <span>Pay Fee Online</span> */}
+                <span className="text-xs md:text-lg whitespace-nowrap">
+                  Pay Fee Online
+                </span>
+              </Link>
             </div>
 
           </div>
         </div>
       </div>
-<div className="max-w-[1900px] mx-auto flex items-center justify-between h-24 px-4 lg:px-6">
-         <div className="flex-shrink-0">
-  <Logo />
-</div>
+      <div className=" max-w-[1900px]
+mx-auto
+flex
+items-center
+justify-between
+h-16
+md:h-20
+lg:h-24
+px-3
+md:px-4
+lg:px-6
+">        <div className="flex-shrink-0">
+          <Logo />
+        </div>
 
         {/* Desktop Menu */}
-<nav className="hidden xl:flex justify-center items-center gap-2">
-         {navItems.map((item) => (
+        <nav className="hidden xl:flex justify-center items-center gap-2">
+          {navItems.map((item) => (
             <div
               key={item.label}
               className="relative group"
@@ -198,13 +224,13 @@ group-hover:translate-y-0
           ))}
         </nav>
 
-<div className="relative z-[9999] flex-shrink-0 flex items-center gap-2">  
-            <ThemeToggle />
+        <div className="relative z-[9999] flex-shrink-0 flex items-center gap-1 md:gap-2">
+          <ThemeToggle />
 
-         <Button
-asChild
-variant="outline"
-className="
+          <Button
+            asChild
+            variant="outline"
+            className="
 hidden xl:inline-flex
 h-14
 px-4
@@ -215,13 +241,13 @@ border-gray-700
 text-white
 bg-[#111827]
 hover:bg-slate-800"
->
+          >
             <Link href="/login">Student Login</Link>
           </Button>
 
           <Button
-asChild
-className="
+            asChild
+            className="
 hidden xl:inline-flex
 h-14
 px-8
@@ -230,88 +256,20 @@ text-[15px]
 font-semibold
 bg-blue-600
 hover:bg-blue-700"
->
+          >
             <Link href="/contact#admission">Apply Now</Link>
           </Button>
 
           <Button
             variant="ghost"
             size="icon"
-           className="xl:hidden text-white"
+            className="xl:hidden text-white"
             onClick={() => setOpen(!open)}
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </Button>
         </div>
       </div>
-
-      {/* Mobile Menu */}
-      {/* {open && (
-<div
-className="
-fixed
-top-0
-left-0
-w-[320px]
-h-screen
-bg-white
-shadow-2xl
-overflow-y-auto
-z-50
-"
->
-
-      <div className="flex items-center justify-between p-5 border-b">
-        <h1 className="text-2xl font-bold">MENU</h1>
-
-        <button onClick={() => setOpen(false)}>
-          <X size={28}/>
-        </button>
-      </div>
-
-
-      <div className="divide-y">
-  {navItems.map((item, index) => (
-    <div key={item.label}>
-
-      <button
-        className="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-lg"
-        onClick={() =>
-          setActiveMenu(activeMenu === index ? null : index)
-        }
-      >
-        {item.label}
-
-        <span>
-          {activeMenu === index ? "-" : "+"}
-        </span>
-      </button>
-
-      {activeMenu === index && (
-        <div className="bg-gray-50">
-
-          {item.children.map((child) => (
-            <Link
-              key={child.href}
-              href={child.href}
-              className="block px-10 py-3 text-gray-700 hover:bg-gray-100"
-              onClick={() => setOpen(false)}
-            >
-              {child.label}
-            </Link>
-          ))}
-
-        </div>
-      )}
-
-    </div>
-  ))}
-</div>
-
-  </div>
-// </div>
-)} */}
-
     </header>
   )
 }

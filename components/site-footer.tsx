@@ -15,26 +15,37 @@ export function SiteFooter() {
     <footer className="bg-[#0f172a] text-gray-300">
 
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-12">
-
+      <div className="
+max-w-7xl
+mx-auto
+px-4
+sm:px-6
+py-12
+md:py-16
+grid
+grid-cols-1
+sm:grid-cols-2
+lg:grid-cols-4
+gap-10
+">
         {/* Logo + About */}
         <div>
-          <div className="flex items-center gap-4 mb-6">
-            <Image
+<div className="flex items-center gap-3 mb-6">
+              <Image
               src="/CoachingLogo.png"
               alt="Logo"
               width={60}
               height={60}
             />
 
-            <h2 className="text-3xl font-bold">
+        <h2 className="text-2xl md:text-3xl font-bold">  
               <span className="text-white">GYANSTHALI</span><br></br>
               <span className="text-blue-500">VIDHYAPEETH</span>
             </h2>
           </div>
 
-          <p className="leading-8 text-gray-400">
-            GYANSTHALI VIDHYAPEETH is a premier coaching institute for
+       <p className="text-sm md:text-base leading-7 text-gray-400">
+              GYANSTHALI VIDHYAPEETH is a premier coaching institute for
             IIT-JEE & NEET preparation with expert faculty, smart
             classrooms and excellent results.
           </p>
@@ -63,8 +74,8 @@ export function SiteFooter() {
 
         {/* Courses */}
         <div>
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Courses
+       <h3 className="text-xl md:text-2xl font-bold text-white mb-6">
+              Courses
           </h3>
 
           <div className="space-y-4">
@@ -147,10 +158,10 @@ export function SiteFooter() {
 
           <div className="space-y-6">
 
-            <div className="flex gap-4">
-              <MapPin className="text-lime-500" />
+          <div className="flex items-start gap-3">
+                <MapPin className="text-lime-500" />
               <p>
-                Akbarpur, Ambedkar Nagar, 224122 
+                Akbarpur, Ambedkar Nagar, 224122
               </p>
             </div>
 

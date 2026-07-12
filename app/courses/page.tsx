@@ -46,14 +46,30 @@ export default function CoursesPage() {
         description="Choose from our flagship JEE, NEET and Foundation programs — each built around concept mastery, practice and mentorship."
       />
 
-      <div className="mx-auto max-w-7xl space-y-20 px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl space-y-10 md:space-y-20 px-4 py-10 md:py-16 sm:px-6 lg:px-8 lg:py-24">
         {courses.map((course, idx) => {
           const Icon = course.icon
           return (
             <section
               key={course.slug}
               id={course.slug}
-              className="grid items-center gap-10 lg:grid-cols-2"
+              className="
+grid
+items-center
+gap-10
+lg:grid-cols-2
+bg-card
+border
+border-border
+rounded-3xl
+p-6
+md:p-10
+shadow-lg
+hover:shadow-2xl
+transition-all
+hover:-translate-y-2
+duration-300
+"
             >
               <div
                 className={cn(
@@ -61,29 +77,61 @@ export default function CoursesPage() {
                   idx % 2 === 1 && 'lg:order-2',
                 )}
               >
-                <span className="flex size-14 items-center justify-center rounded-2xl bg-secondary">
-                  <Icon className={cn('size-7', course.accent)} />
+                <span
+                  className="
+  flex
+  size-16
+  items-center
+  justify-center
+  rounded-2xl
+  bg-primary/10
+  shadow-md
+  "  >   
+              <Icon className={cn('size-7', course.accent)} />
                 </span>
-                <h2 className="font-heading text-3xl font-bold">{course.name}</h2>
-                <p className="text-pretty text-lg text-muted-foreground">
-                  {course.tagline}
+                <h2 className="font-heading text-2xl md:text-4xl font-bold">{course.name}</h2>
+                <p className="text-base md:text-lg leading-8 text-muted-foreground">                  {course.tagline}
                 </p>
                 <div className="flex flex-wrap gap-3 text-sm">
-                  <span className="rounded-full bg-secondary px-3 py-1 font-medium">
+                  <span className="
+rounded-full
+bg-primary/10
+text-primary
+px-4
+py-2
+font-semibold
+">
                     Duration: {course.duration}
                   </span>
-                  <span className="rounded-full bg-secondary px-3 py-1 font-medium">
+                  <span className="
+rounded-full
+bg-primary/10
+text-primary
+px-4
+py-2
+font-semibold
+">
                     Mode: {course.mode}
                   </span>
                 </div>
-                <Button asChild className="mt-2 w-fit">
+                <Button
+  asChild
+  className="
+  mt-4
+  w-fit
+  rounded-full
+  px-8
+  py-6
+  text-base
+  "
+>
                   <Link href="/contact#admission">Enroll in {course.name}</Link>
                 </Button>
               </div>
 
               <div
                 className={cn(
-                  'rounded-3xl border border-border bg-card p-8',
+                  'rounded-3xl border border-border bg-card p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300',
                   idx % 2 === 1 && 'lg:order-1',
                 )}
               >
@@ -96,7 +144,9 @@ export default function CoursesPage() {
                       <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
                         <Check className="size-3.5" />
                       </span>
-                      <span className="text-sm">{h}</span>
+                      <span className="text-sm md:text-base leading-7">
+  {h}
+</span>
                     </li>
                   ))}
                 </ul>
@@ -108,7 +158,18 @@ export default function CoursesPage() {
                     {course.subjects.map((s) => (
                       <span
                         key={s}
-                        className="rounded-full border border-border px-3 py-1 text-xs font-medium"
+                       className="
+rounded-full
+bg-secondary
+px-4
+py-2
+text-sm
+font-medium
+hover:bg-primary
+hover:text-white
+transition
+cursor-pointer
+"
                       >
                         {s}
                       </span>

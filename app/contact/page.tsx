@@ -104,8 +104,7 @@ hover:border-blue-500
             </div>
 
             <a
-              href="https://wa.me/911140001234"
-              target="_blank"
+href="whatsapp://send?phone=918881166262&text=Hello%20Gyansthali%20Team,%20I%20want%20admission%20information."              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-primary/40"
             >

@@ -85,7 +85,7 @@ export function AdmissionForm() {
               <SelectContent>
                 <SelectItem value="jee">JEE (Main + Advanced)</SelectItem>
                 <SelectItem value="neet">NEET</SelectItem>
-                <SelectItem value="foundation">Foundation (8–10)</SelectItem>
+                <SelectItem value="foundation">Foundation (11-12)</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -99,9 +99,9 @@ export function AdmissionForm() {
                 <SelectValue placeholder="Select class" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="8">Class 8</SelectItem>
+                {/* <SelectItem value="8">Class 8</SelectItem>
                 <SelectItem value="9">Class 9</SelectItem>
-                <SelectItem value="10">Class 10</SelectItem>
+                <SelectItem value="10">Class 10</SelectItem> */}
                 <SelectItem value="11">Class 11</SelectItem>
                 <SelectItem value="12">Class 12</SelectItem>
                 <SelectItem value="dropper">Dropper</SelectItem>

@@ -4,16 +4,16 @@ export default function JeeAdvancedPage() {
   const program = feeData.oneYearProgram;
 
   return (
-    <div className="min-h-screen bg-gray-100 py-10">
-      <div className="max-w-7xl mx-auto bg-white p-8 shadow-lg">
+    <div className="min-h-screen bg-gray-100 dark:bg-slate-950 py-10">
+      <div className="max-w-7xl mx-auto bg-white dark:bg-slate-900 p-8 shadow-lg rounded-2xl">
 
-        <h1 className="text-4xl font-bold text-center mb-8">
+        <h1 className="text-4xl font-bold text-center mb-8 text-slate-900 dark:text-white">
           {feeData.title}
         </h1>
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse border">
-            <thead className="bg-lime-100">
+            <thead className="bg-lime-100 dark:bg-slate-800">
               <tr>
                 <th className="border p-4">Target</th>
                 <th className="border p-4">Class</th>
@@ -32,7 +32,7 @@ export default function JeeAdvancedPage() {
                     <>
                       <td
                         rowSpan={program.fees.length}
-                        className="border p-4 text-center"
+                        className="border border-gray-300 dark:border-slate-700 p-4 text-center text-slate-900 dark:text-gray-200"
                       >
                         {program.target}
                       </td>
