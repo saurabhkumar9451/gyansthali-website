@@ -15,12 +15,12 @@ export function Hero() {
             Scholarship Test Available
           </span>
           <h1 className="text-balance font-heading text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            GYANSTHALI VIDHYAPEETH
+            GYANSTHALI VIDYAPEETH
 
             <span className="text-primary">IIT-JEE & NEET Coaching Classes</span>
           </h1>
           <p className="max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            At Gyansthali Vidhyapeeth, we provide expert faculty, smart classrooms,
+            At Gyansthali Vidyapeeth, we provide expert faculty, smart classrooms,
             weekly test series, doubt solving sessions and personal mentoring
             for IIT-JEE & NEET aspirants.
           </p>

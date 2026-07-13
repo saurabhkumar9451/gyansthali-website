@@ -40,12 +40,12 @@ gap-10
 
         <h2 className="text-2xl md:text-3xl font-bold">  
               <span className="text-white">GYANSTHALI</span><br></br>
-              <span className="text-blue-500">VIDHYAPEETH</span>
+              <span className="text-blue-500">VIDYAPEETH</span>
             </h2>
           </div>
 
        <p className="text-sm md:text-base leading-7 text-gray-400">
-              GYANSTHALI VIDHYAPEETH is a premier coaching institute for
+              GYANSTHALI VIDYAPEETH is a premier coaching institute for
             IIT-JEE & NEET preparation with expert faculty, smart
             classrooms and excellent results.
           </p>
@@ -161,7 +161,7 @@ gap-10
           <div className="flex items-start gap-3">
                 <MapPin className="text-lime-500" />
               <p>
-                Akbarpur, Ambedkar Nagar, 224122
+                Akbarpur, Ambedkar Nagar, 224168
               </p>
             </div>
 
@@ -177,7 +177,7 @@ gap-10
 
             <div className="flex gap-4">
               <Globe className="text-lime-500" />
-              <p>www.gyansthali.com</p>
+              <p>Infogyansthalividyapeeth<br></br>@gmail.com</p>
             </div>
 
           </div>
@@ -192,11 +192,11 @@ gap-10
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between">
 
           <p className="text-sm text-gray-400">
-            © 2026 Gyansthali Vidhyapeeth. All Rights Reserved.
+            © 2026 Gyansthali Vidyapeeth. All Rights Reserved.
           </p>
 
           <p className="text-sm text-gray-400 mt-3 md:mt-0">
-            Designed with ❤️ by Gyansthali Team
+            Designed by Gyansthali Team
           </p>
 
         </div>

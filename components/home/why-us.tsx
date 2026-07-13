@@ -59,7 +59,7 @@ text-foreground
     >
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <SectionHeading
-          eyebrow="Why GYANSTHALIVIDHYAPEETH"
+          eyebrow="Why GYANSTHALIVIDYAPEETH"
           title="An ecosystem designed for rankers"
           description="Everything a serious aspirant needs — under one roof and one login."
         />

@@ -48,7 +48,7 @@ export default function AdmissionSuccessPage() {
 
               Thank you for choosing
               <span className="font-semibold">
-                {" "}GYANSTHALI VIDHYAPEETH
+                {" "}GYANSTHALI VIDYAPEETH
               </span>
 
             </p>
@@ -236,7 +236,7 @@ export default function AdmissionSuccessPage() {
 
                     <p className="font-semibold">
 
-                      support@gyansthalividhyapeeth.com
+                      support@gyansthalividyapeeth.com
 
                     </p>
 
@@ -252,7 +252,7 @@ export default function AdmissionSuccessPage() {
 
                     <p className="font-semibold">
 
-                      +91 9876543210
+                      +91 8881166262
 
                     </p>
 
@@ -274,7 +274,7 @@ export default function AdmissionSuccessPage() {
 
                 <span className="font-semibold text-green-600">
 
-                  {" "}GYANSTHALI VIDHYAPEETH
+                  {" "}GYANSTHALI VIDYAPEETH
 
                 </span>
 
